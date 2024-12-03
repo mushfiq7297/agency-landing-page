@@ -1,57 +1,58 @@
 import { BiCalendarCheck } from "react-icons/bi";
 import Button from "../shared/Button";
 import { useState } from "react";
+import Logo from "../assets/LOGO.png"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white p-4 w-full mx-auto">
+    <nav className="p-4 w-full mx-auto max-w-6xl ">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
           <img
-            src="https://i.ibb.co/3BJ3jcB/LOGO.png"
+            src={Logo}
             alt="Logo"
             className="w-10 h-10"
           />
           <a href="/" className="text-2xl font-bold text-gray-800">
-            Octopi
+            <h1 className="text-navyBlue">AQUAS</h1>
           </a>
         </div>
 
         
         <div className="hidden md:flex space-x-8">
-          <a href="#home" className="text-navyBlue font-semibold hover:text-black">
+          <a href="#home" className="text-navyBlue font-semibold hover:text-white">
             Home
           </a>
           <a
             href="#about"
-            className="text-navyBlue font-semibold hover:text-black text-center"
+            className="text-navyBlue font-semibold hover:text-white text-center"
           >
             About us
           </a>
           <a
             href="#services"
-            className="text-navyBlue font-semibold hover:text-black text-center"
+            className="text-navyBlue font-semibold hover:text-white text-center"
           >
             Website
           </a>
           <a
             href="#contact"
-            className="text-navyBlue font-semibold hover:text-black text-center"
+            className="text-navyBlue font-semibold hover:text-white text-center"
           >
             Marketing
           </a>
           <a
             href="#contact"
-            className="text-navyBlue font-semibold hover:text-black text-center"
+            className="text-navyBlue font-semibold hover:text-white text-center"
           >
             Branding
           </a>
           <a
             href="#contact"
-            className="text-navyBlue font-semibold hover:text-black text-center"
+            className="text-navyBlue font-semibold hover:text-white text-center"
           >
             Blogs
           </a>
@@ -92,37 +93,37 @@ const Navbar = () => {
           <div className="flex flex-col space-y-2">
             <a
               href="#home"
-              className="text-navyBlue font-semibold hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-white text-center"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-navyBlue font-semibold hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-white text-center"
             >
               About us
             </a>
             <a
               href="#services"
-              className="text-navyBlue font-semibold hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-white text-center"
             >
               Website
             </a>
             <a
               href="#contact"
-              className="text-navyBlue font-semibold hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-white text-center"
             >
               Marketing
             </a>
             <a
               href="#contact"
-              className="text-navyBlue font-semibold hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-white text-center"
             >
               Branding
             </a>
             <a
               href="#contact"
-              className="text-navyBlue font-semibold hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-white text-center"
             >
               Blogs
             </a>

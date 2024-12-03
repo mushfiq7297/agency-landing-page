@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Button from "../shared/Button";
+import Lottie from "lottie-react";
+import animationData from "../assets/Animation - 1733257976767"
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -26,11 +28,9 @@ const About = () => {
         animate={inView ? "visible" : "hidden"}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <img
-          src="https://octopi-digital.com/wp-content/uploads/2024/09/Office-Photos-Collage-25-x-19-cm-1-768x584.png"
-          alt=""
-          className="w-full h-[450px] rounded-lg"
-        />
+       <div style={{ width: "400px", height: "400px" }}>
+          <Lottie animationData={animationData} loop={true} />
+        </div>
       </motion.div>
 
       <motion.div
@@ -53,16 +53,16 @@ const About = () => {
           animate={inView ? { y: 0, opacity: 1 } : { y: -20, opacity: 0 }}
           transition={{ delay: 0.7 }}
         >
-          Octopi Digital - Best AI Based Digital Marketing Agency Since 2017
+          AQUAS Digital - Best AI Based Digital Marketing Agency Since 2017
         </motion.h1>
 
         <motion.p
-          className="text-md mb-8"
+          className="text-lg mb-8 text-navyBlue"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 1.1 }}
         >
-          At Octopi Digital, we transcend traditional boundaries, ushering in a
+          At AQUAS Digital, we transcend traditional boundaries, ushering in a
           new era of digital marketing excellence. We are not just a digital
           marketing agency; we are architects of cutting-edge AI solutions,
           crafting bespoke strategies to elevate your brand in the digital

@@ -10,7 +10,7 @@ import Stat from "./Home/Stat";
 function App() {
   return (
     <div className="scroll-smooth">
-      <div className="max-w-6xl mx-auto ">
+      <div className="bg-secondary mx-auto ">
         <Navbar />
       </div>
       <div className="bg-secondary ">
@@ -26,7 +26,7 @@ function App() {
       <div className="pb-20 bg-secondary">
         <Comments/>
       </div>
-      <div className="bg-navyBlue">
+      <div className="bg-[#102544]">
         <Footer/>
       </div>
     </div>

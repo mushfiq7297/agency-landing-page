@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Button from "../shared/Button";
 import { BiCalendarCheck } from "react-icons/bi";
-
+import Lottie from "lottie-react";
+import animationData from "../assets/Animation - 1733257395356"
+import animationDataBG from "../assets/Animation - 1733261480402"
 const Hero = () => {
   const { ref, inView } = useInView({
     triggerOnce: false, 
@@ -12,6 +14,7 @@ const Hero = () => {
 
   return (
     <div className="flex flex-col md:flex-row gap-4 justify-between w-full md:w-full lg:max-w-6xl mx-auto items-center py-28">
+     
       <motion.div
         ref={ref}
         className="w-1/2 flex-col justify-center"
@@ -25,7 +28,7 @@ const Hero = () => {
           animate={inView ? { y: 0, opacity: 1 } : { y: -20, opacity: 0 }}
           transition={{ delay: 0.5 }}
         >
-          Welcome to Octopi Digital
+          Welcome to AQUAS Digital
         </motion.h3>
         <motion.h1
           className="text-navyBlue text-5xl font-semibold mb-4"
@@ -45,12 +48,12 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-md mb-8"
+          className="text-lg mb-8 text-navyBlue"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 1.1 }}
         >
-          Octopi Digital- We handle everything from targeted campaigns to
+          AQUAS Digital- We handle everything from targeted campaigns to
           data–driven insights, ensuring growth and visibility for your
           business in the digital world.
         </motion.p>
@@ -63,11 +66,9 @@ const Hero = () => {
         animate={inView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
         transition={{ delay: 1, duration: 1 }}
       >
-        <img
-          src="https://octopi-digital.com/wp-content/uploads/2024/09/ODL-Discussion-2048-x-2048-px-2048x2048.png"
-          alt=""
-          className="w-full h-[500px]"
-        />
+        <div style={{ width: "400px", height: "400px" }}>
+          <Lottie animationData={animationData} loop={true} />
+        </div>
       </motion.div>
     </div>
   );

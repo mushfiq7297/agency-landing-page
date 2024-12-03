@@ -48,7 +48,7 @@ const Services = () => {
         {[...Array(6)].map((_, index) => (
           <motion.div
             key={index}
-            className="bg-white text-center space-y-6 px-5 py-5 rounded-xl"
+            className="text-center space-y-6 px-5 py-5 rounded-xl border-2"
             initial={{ opacity: 0, y: 50 }} 
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} 
             transition={{ duration: 0.9, delay: 0.4 * index }}
@@ -59,7 +59,7 @@ const Services = () => {
               className="mx-auto rounded-full p-4"
             />
             <h1 className="text-primary text-2xl font-bold">Web Development</h1>
-            <p>
+            <p className="text-navyBlue">
               Developing user-friendly, responsive websites that employ
               cutting-edge technology and creativity to realize your vision.
             </p>

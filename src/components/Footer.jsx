@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Logo from "../assets/LOGO.png"
 
 const Footer = () => {
   // Animation variants
@@ -27,14 +28,14 @@ const Footer = () => {
         >
           <div className="flex flex-col space-x-2">
             <img
-              src="https://i.ibb.co.com/3BJ3jcB/LOGO.png"
+              src={Logo}
               alt="Octopi Digital"
               className="w-10 h-10"
             />
-            <h2 className="font-bold text-lg">Octopi Digital</h2>
+            <h2 className="font-bold text-lg">AQUAS Digital</h2>
           </div>
           <p className="text-sm">
-            Octopi Digital Ltd is a dynamic force in the digital landscape,
+            AQUAS Digital Ltd is a dynamic force in the digital landscape,
             pioneering innovative solutions through a blend of creativity and
             cutting-edge technology.
           </p>
@@ -52,8 +53,7 @@ const Footer = () => {
           <h3 className="text-lg font-bold">CONTACT US</h3>
           <div className="space-y-2 text-sm">
             <p>
-               8190 Barker Cypress
-              Rd, Cypress, TX 77433, United States
+               Redmonton, canada
             </p>
             <p>
                Monday - Friday | 9AM
@@ -116,7 +116,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li className="flex items-center">
               Career
-              <span className="ml-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">
+              <span className="ml-2 bg-primary text-white text-xs px-2 py-1 rounded">
                 We are hiring
               </span>
             </li>
