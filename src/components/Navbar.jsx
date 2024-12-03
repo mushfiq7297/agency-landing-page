@@ -1,12 +1,12 @@
-import React, { useState } from "react";
 import { BiCalendarCheck } from "react-icons/bi";
 import Button from "../shared/Button";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white  p-4">
+    <nav className="bg-white p-4 w-full mx-auto">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex items-center gap-2">
@@ -20,19 +20,40 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Center: Navigation Links */}
+        
         <div className="hidden md:flex space-x-8">
-          <a href="#home" className="text-gray-600 hover:text-black">
+          <a href="#home" className="text-navyBlue font-semibold hover:text-black">
             Home
           </a>
-          <a href="#about" className="text-gray-600 hover:text-black">
-            About
+          <a
+            href="#about"
+            className="text-navyBlue font-semibold hover:text-black text-center"
+          >
+            About us
           </a>
-          <a href="#services" className="text-gray-600 hover:text-black">
-            Services
+          <a
+            href="#services"
+            className="text-navyBlue font-semibold hover:text-black text-center"
+          >
+            Website
           </a>
-          <a href="#contact" className="text-gray-600 hover:text-black">
-            Contact
+          <a
+            href="#contact"
+            className="text-navyBlue font-semibold hover:text-black text-center"
+          >
+            Marketing
+          </a>
+          <a
+            href="#contact"
+            className="text-navyBlue font-semibold hover:text-black text-center"
+          >
+            Branding
+          </a>
+          <a
+            href="#contact"
+            className="text-navyBlue font-semibold hover:text-black text-center"
+          >
+            Blogs
           </a>
         </div>
 
@@ -41,7 +62,7 @@ const Navbar = () => {
           <Button text="Book Now" Icon={BiCalendarCheck} />
         </div>
 
-        {/* Mobile Menu Button */}
+       
         <div className="md:hidden">
           <button
             className="text-gray-800 focus:outline-none"
@@ -65,35 +86,47 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      
       {isMenuOpen && (
         <div className="md:hidden mt-4">
           <div className="flex flex-col space-y-2">
             <a
               href="#home"
-              className="text-gray-600 hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-black text-center"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-gray-600 hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-black text-center"
             >
-              About
+              About us
             </a>
             <a
               href="#services"
-              className="text-gray-600 hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-black text-center"
             >
-              Services
+              Website
             </a>
             <a
               href="#contact"
-              className="text-gray-600 hover:text-black text-center"
+              className="text-navyBlue font-semibold hover:text-black text-center"
             >
-              Contact
+              Marketing
             </a>
-            <div className="mt-4">
+            <a
+              href="#contact"
+              className="text-navyBlue font-semibold hover:text-black text-center"
+            >
+              Branding
+            </a>
+            <a
+              href="#contact"
+              className="text-navyBlue font-semibold hover:text-black text-center"
+            >
+              Blogs
+            </a>
+            <div className="mt-4 text-center md:text-center lg:text-right ">
               <Button text="Book Now" Icon={BiCalendarCheck} />
             </div>
           </div>

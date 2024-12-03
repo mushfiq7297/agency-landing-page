@@ -6,12 +6,12 @@ import { BiCalendarCheck } from "react-icons/bi";
 
 const Hero = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Allow animation to trigger both on scroll down and up
-    threshold: 0.2, // Trigger animation when 20% of the element is in view
+    triggerOnce: false, 
+    threshold: 0.2, 
   });
 
   return (
-    <div className="flex justify-between max-w-6xl mx-auto items-center py-28">
+    <div className="flex flex-col md:flex-row gap-4 justify-between w-full md:w-full lg:max-w-6xl mx-auto items-center py-28">
       <motion.div
         ref={ref}
         className="w-1/2 flex-col justify-center"

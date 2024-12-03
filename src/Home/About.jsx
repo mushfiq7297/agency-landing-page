@@ -5,8 +5,8 @@ import Button from "../shared/Button";
 
 const About = () => {
   const [ref, inView] = useInView({
-    triggerOnce: false, // Fire animations repeatedly when scrolling up and down
-    threshold: 0.2, // Trigger when 20% of the component is in view
+    triggerOnce: false, 
+    threshold: 0.2, 
   });
 
   const itemVariants = {
@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div
       ref={ref}
-      className="flex justify-between max-w-6xl mx-auto items-center py-28 gap-10"
+      className="flex flex-col md:flex-row justify-between w-full md:w-full  lg:max-w-6xl mx-auto items-center py-28 gap-10"
     >
       <motion.div
         className="mx-auto flex justify-start"

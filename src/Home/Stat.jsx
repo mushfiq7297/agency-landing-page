@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Stat = () => {
-  // Intersection Observer setup
+
   const { ref, inView } = useInView({
-    triggerOnce: false, // Trigger once when in view
-    threshold: 0.1, // 20% visibility to trigger
+    triggerOnce: false, 
+    threshold: 0.1, 
   });
 
   return (
-    <div className="flex max-w-6xl justify-between mx-auto py-16 gap-4" ref={ref}>
+    <div className="flex flex-col md:flex-row lg:flex-row w-full md:w-full lg:max-w-6xl text-center md:justify-between mx-auto py-16 gap-4" ref={ref}>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
