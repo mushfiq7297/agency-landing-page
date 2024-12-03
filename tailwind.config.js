@@ -10,6 +10,7 @@ export default {
         primary: "#f79426",
         secondary: "#faf5ef",
         navyBlue:"#2a2f40",
+        stat:"#2a2a2a"
       },
     },
   },
